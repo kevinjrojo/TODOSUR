@@ -1,0 +1,39 @@
+@import"../partials/varialebles";
+
+main {
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.galeria {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.galeria img {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 6px 6px rgb(0, 0, 0);
+    border: 4px rgb(0, 0, 0) solid; 
+    width: 33vh;
+    height: 55vh;
+}
+.galeria img:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+
+.horizontal img:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+@media screen and (min-width: 768px){
+    .galeria {
+        grid-template-columns: auto auto auto auto;
+    }
+    .carrusel{
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-bottom: 100px;
+        background-color: rgba(0, 0, 0, 0.815);
+    }
+    
+}
