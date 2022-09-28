@@ -2,17 +2,20 @@
     text-align: center;
     justify-content: center;
     display: grid;
-    grid-template-columns: auto;
-    color: #fff;
+    grid-template-columns: auto;  
+}
+#img {
     
 }
-.text {
-    font-size: 18px;
+.card-title {
+    color: black;
 }
-.item {
-    color: #fff;
+.card-text {
+    color: black;
 }
-.comida {
-    width: 400px;
-    height: 300px;
+@media screen and (min-width: 768px){
+    #img{
+        border: 4px black solid;
+        height: 200px;
+    }
 }

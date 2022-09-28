@@ -6,17 +6,16 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
+  color: #fff;
 }
 #body {
-  background-image: url(../image/Galeria/Fondo.jpg);
-  background-size:contain;
+  background-image: url(../image/Galeria/fondo2.png);
+  background-size:cover;
 }
 header {
-  background-color: $colorPrincipal;
   width: 100%;
   height: 8vh;
   border-bottom: 3px rgba(255, 255, 255, 0.623) solid;
-  
 }
 nav {
   height: 100px;
@@ -48,7 +47,6 @@ nav {
   cursor: pointer;
 }
 .nav-menu {
-  
   position: absolute;
   width: 100%;
   height: 0vh;
@@ -89,16 +87,12 @@ nav {
 }
 .main {
   line-height: 50px;
-  padding: 15vh;
+  padding: 5vh;
   justify-content: center;
   display: grid;
-  background: $colorPrincipal;
-
 }
 .main nav {
-  top: -50px;
-  position: relative;
-  height: 30vh;
+  height: 35vh;
   text-align: center;
   display: grid;
 }
@@ -111,41 +105,54 @@ nav {
   color: rgb(255, 255, 255);
 }
 .input {
-  border: 2px black solid;
   text-align: center;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.541);
   height: 40px;
   font-size: 20px;
 }
-.boton {
-  margin-left: -10px;
+#datemax{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 36vh;
+  font-size: 30px;
+  color: black;
+  display: flex;
+}
+#datemin {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 36vh;
+  font-size: 30px;
+  color: black;
+  display: flex;
+}
+.buton {
   box-shadow: 9px rgb(255, 255, 255);
   cursor: pointer;
   border: 2px rgb(0, 0, 0) solid;
   color: black;
   margin-top: 20px;
-  font-family: "Times New Roman", Times, serif;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.541);
-  width: 100px;
   font-size: 25px;
-
 }
-.boton:hover {
+
+.buton:hover {
   color: rgb(0, 0, 0);
   background-color: #fff;
 }
-.boton:hover:active {
+
+.buton:hover:active {
   background-color: #b9b9b9;
   box-shadow: 0 5px rgb(167, 167, 167);
   transform: translateY(4px);
 }
 .footer {
-  padding-top: 40px;
+  border-top: 4px rgba(255, 255, 255, 0.623) solid;
+  margin-top: 35vh;
   display: flex;
   color: white;
-  background-color: $colorPrincipal;
 }
 .footer div {
 }
@@ -173,8 +180,10 @@ nav {
   height: 30px;
 }
 @media screen and (min-width: 768px){
+  #body {
+    background-size: cover;
+  }
   header {
-    background-color: $colorPrincipal;
   }
   nav{
     height: 100px;
@@ -207,5 +216,12 @@ nav {
     margin-left: 65px;
     display: flex;
     justify-content: center;
-}
+  }
+  #datemax {
+    width: 34vh;
+  }
+  #datemin {
+   
+    width: 34vh;
+  }
 }

@@ -31,14 +31,22 @@
 		<nav>
 			<h2>¡BIENVENIDO!</h2>
                 <div>
+                    <form action="./index.html">
                     <h3 class="presentacion">Origen</h3>
                     <input type="text" placeholder="ingrese su origen" class="input">
+                    <h3 class="presentacion">Fecha de ida</h3>
+                    <input type="date" id="datemin" name="datemin" min="2021-09-28">
                 </div>
                 <div>
                     <h3 class="presentacion">Destino</h3>
                     <input type="text" placeholder="ingrese su destino" class="input">
-                    <input type="button" value="Buscar" class="boton">
+                    <h3 class="presentacion">Fecha de vuelta</h3>
+                    <input type="date" id="datemax" name="datemax" max="2026-12-31">
                 </div>
+                <div>
+                    <input type="submit" value="Buscar" class="buton">
+                </div>
+                </form>
 		</nav>
 	</main>
     <footer>
