@@ -1,7 +1,7 @@
 .galeria {
-  justify-content: space-around;
   display: grid;
-  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-template-columns: auto;
 }
 
 .galeria img {
@@ -25,7 +25,11 @@
 
 @media screen and (min-width: 768px) {
   .galeria {
+    justify-content: space-around;
     grid-template-columns: auto auto auto auto;
+  }
+  .galeria img {
+    margin: 15px;
   }
   .carrusel {
     padding-right: 100px;
@@ -35,29 +39,39 @@
 }
 .gastronomia {
   text-align: center;
-  justify-content: center;
+}
+
+main {
+  padding-top: 20px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
+#target {
+  background-color: rgba(0, 255, 255, 0.445);
 }
 
 .card-title {
-  color: black;
+  color: white;
 }
 
 .card-text {
-  color: black;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto auto;
+  }
   #img {
-    border: 4px black solid;
     height: 200px;
   }
 }
 * {
   margin: 0%;
   padding: 0%;
-  text-decoration: none;
+  text-decoration: none !important;
   list-style: none;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
@@ -87,8 +101,8 @@ nav {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.233);
   position: relative;
-  top: -25px;
-  padding: 10px;
+  top: -15px !important;
+  padding: 5px;
   color: white;
   font-size: 25px;
   transition: 0.2s;

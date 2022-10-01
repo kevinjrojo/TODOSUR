@@ -1,9 +1,9 @@
 @import"../partials/varialebles";
 
 .galeria {
-    justify-content: space-around;
     display: grid;
-    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-template-columns: auto;
 }
 .galeria img {
     margin-top: 20px;
@@ -24,7 +24,11 @@
 }
 @media screen and (min-width: 768px){
     .galeria {
+        justify-content: space-around;
         grid-template-columns: auto auto auto auto;
+    }
+    .galeria img {
+        margin: 15px;
     }
     .carrusel{
         padding-right: 100px;
