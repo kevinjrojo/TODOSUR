@@ -69,13 +69,53 @@ main {
   }
 }
 .title {
-  display: flex;
+  grid-template-columns: auto;
   justify-content: center;
+  display: grid;
   font-size: 50px;
 }
 
-#buton {
-  display: flex;
+.text {
+  margin: 0px;
+  padding: 0px;
+  text-align: start;
+  font-size: 20px;
+}
+
+.eventos {
+  justify-content: space-around;
+  grid-template-columns: auto;
+  display: grid;
+}
+
+.img {
+  margin-top: 20px;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .eventos {
+    grid-template-columns: auto auto;
+  }
+  .title {
+    text-align: center;
+  }
+}
+.agencia {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.enlaces {
+  color: white;
+}
+
+.turismo {
+  background-color: rgb(83, 216, 83);
+  width: 200px;
+  height: 200px;
 }
 
 * {
