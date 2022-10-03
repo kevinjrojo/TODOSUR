@@ -1,3 +1,7 @@
+#carouselExampleControls {
+  z-index: 1;
+}
+
 .galeria {
   display: grid;
   justify-content: center;
@@ -140,6 +144,7 @@ header {
 }
 
 nav {
+  z-index: 2;
   height: 100px;
   width: 100%;
   display: flex;
@@ -210,6 +215,7 @@ nav {
 }
 
 #check:checked ~ .nav-menu {
+  z-index: 2;
   height: 100vh;
 }
 
@@ -218,6 +224,7 @@ nav {
 }
 
 .main {
+  z-index: 1;
   line-height: 50px;
   padding: 5vh;
   justify-content: center;
@@ -225,6 +232,7 @@ nav {
 }
 
 .main nav {
+  z-index: 1;
   height: 35vh;
   text-align: center;
   display: grid;

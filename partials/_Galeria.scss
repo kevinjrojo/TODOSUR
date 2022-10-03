@@ -1,5 +1,8 @@
 @import"../partials/varialebles";
 
+#carouselExampleControls {
+    z-index: 1;
+}
 .galeria {
     display: grid;
     justify-content: center;
